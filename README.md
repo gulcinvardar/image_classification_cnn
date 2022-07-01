@@ -1,6 +1,6 @@
 # Image classification based on a Convolutional Neural Network model
 
-## Results
+## Example Results
 
 <p float="left">
   <img src="https://github.com/gulcinvardar/image_classification_cnn/blob/main/example_predicted_images/image-1-pred.png" width="200" />
@@ -29,9 +29,9 @@ Install:
 ## Usage
 **Step1:**
 
-To capture images to train the model and save them in separate directories, please refer to [github/bonartm](https://github.com/bonartm/imageclassifier)
-Take 10-15 images of 10-15 items belonging to one class.
-Save the images in different directories named as the class names. 
+1. To capture images to train the model and save them in separate directories, please refer to [github/bonartm](https://github.com/bonartm/imageclassifier)
+2. Take 10-15 images of 10-15 items belonging to one class.
+3. Save the images in different directories named as the class names. 
 
 **Step2:**
 
