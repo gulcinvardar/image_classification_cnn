@@ -45,24 +45,23 @@ def earlystop():
 )
     return early_stop
 
-
-K.clear_session()
-
-
 base_path = './data/'
 target_size=(128,128)
 input_shape = (128, 128, 3)
 epochs = 150
 batch_size=32
 
-model = cnn_model()
-early_stop = earlystop()
-model.summary()
-hist = model.fit_generator(train_generator,
-                validation_data = validation_generator, 
-                epochs=epochs, 
-                callbacks = [early_stop]
-                )
-model.save("cnn_objects.h5")
-fig = pd.DataFrame(hist.history).plot()
-plt.savefig('cnn_object_plot.png')
+if __name__ == "__main__":
+
+    K.clear_session()
+    model = cnn_model()
+    early_stop = earlystop()
+    model.summary()
+    hist = model.fit_generator(train_generator,
+                    validation_data = validation_generator, 
+                    epochs=epochs, 
+                    callbacks = [early_stop]
+                    )
+    model.save("cnn_objects.h5")
+    fig = pd.DataFrame(hist.history).plot()
+    plt.savefig('cnn_object_plot.png')
