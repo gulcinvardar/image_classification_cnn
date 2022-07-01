@@ -53,7 +53,6 @@ K.clear_session()
 
 
 base_path = './data/'
-test_path ='./test_data/'
 target_size=(128,128)
 input_shape = (128, 128, 3)
 epochs = 150
