@@ -1,7 +1,5 @@
 import pandas as pd
 import numpy as np
-import os
-import random
 import tensorflow as tf
 import cv2
 
@@ -11,7 +9,6 @@ from tensorflow import keras
 from keras.preprocessing import image 
 from keras import backend as K
 from keras import layers
-from tensorflow.keras.applications.resnet50 import ResNet50, decode_predictions, preprocess_input
 from keras.layers import Dense, Input, InputLayer, Flatten
 from keras.models import Sequential, Model
 
